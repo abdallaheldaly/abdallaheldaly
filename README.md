@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 <a href="https://www.linkedin.com/in/abdallaheldaly/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" height="30" width="40" /></a>
 <a href="https://stackoverflow.com/users/11617549/abdallah-el-daly" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg" height="30" width="40" /></a>
 </p>
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=AbdallahEldaly&theme=dark&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=AbdallahEl-daly&theme=dark&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
 
 <p>&nbsp;<img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=AbdallahEldaly&theme=dark&date_format=M%20j%5B%2C%20Y%5D" /></p>
 
