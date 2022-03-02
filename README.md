@@ -14,11 +14,17 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <h3 align="left">Connect with me:</h3>
-      <div id="badges">
-        <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="https://www.linkedin.com/in/abdallaheldaly/"/>
-        <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="https://www.youtube.com/channel/UCWI8Y-otDYNJc7iYapNm-jQ"/>
-        <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="https://twitter.com/AbdallahAboElM5"/>
-      </div>
+<div id="badges">
+  <a href="https://www.linkedin.com/in/abdallaheldaly/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <a href="https://www.youtube.com/channel/UCWI8Y-otDYNJc7iYapNm-jQ">
+    <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube Badge"/>
+  </a>
+  <a href="https://twitter.com/AbdallahAboElM5">
+    <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
+  </a>
+</div>
     <div>
         <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40"/>&nbsp;
         <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
