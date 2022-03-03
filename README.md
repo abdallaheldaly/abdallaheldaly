@@ -14,6 +14,7 @@ I'm Software Developer in Egypt:
 
 <p>&nbsp;<img align="center" src="https://github-profile-trophy.vercel.app/?username=AbdallahEl-Daly" /></p>
 
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=AbdallahEl-Daly" /> </p>
 
 <h3 align="left">Connect with me:</h3>
 <div id="badges">
@@ -49,3 +50,4 @@ I'm Software Developer in Egypt:
 <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" alt="Git" width="40" height="40"/>&nbsp;
 
 <p>&nbsp;<img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=AbdallahEl-daly&theme=dark&date_format=M%20j%5B%2C%20Y%5D" /></p>
+
