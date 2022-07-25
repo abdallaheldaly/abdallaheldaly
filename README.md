@@ -8,7 +8,8 @@ I'm Software Developer in Egypt:
 - 🌱 I’m currently learning **Deep Learning**
 <!-- - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ... -->
-- 💬 Ask me about **Python, Django, Fast** -->
+- 💬 Ask me about **Python, Django, Fast** 
+ --!>
 - 📫 How to reach me: **abdallah.m.daly@gmail.com**
 <!-- - ⚡ Fun fact: ... -->
 
