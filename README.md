@@ -1,33 +1,29 @@
-<h1 align="center">Hi 👋, I'm Abdallah El-Daly</h1>
+<h1 align="center">Hi 👋, I'm Abdallah El Daly</h1>
 
 <!--**AbdallahEl-Daly/AbdallahEl-Daly** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.-->
 
 I'm Software Developer in Egypt:
-<!--🔭 I’m currently working on ...
-🌱 I’m currently learning **Deep Learning**
-👯 I’m looking to collaborate on ...
-🤔 I’m looking for help with ... -->
-💬 Ask me about **Python, Django, Fast** 
+
+<!-- 💬 Ask me about **Python, Django, Fast**  -->
   
 - 📫 How to reach me: **abdallah.m.daly@gmail.com**
- ⚡ Fun fact: ...
-
 
 
 <h3 align="left">Connect with me:</h3>
-<div id="badges">
-  <a href="https://www.linkedin.com/in/abdallaheldaly/">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-  </a>
-  <a href="https://www.youtube.com/channel/UCWI8Y-otDYNJc7iYapNm-jQ">
-    <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube Badge"/>
-  </a>
-  <a href="https://twitter.com/AbdallahAboElM5">
-    <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
-  </a>
-</div>
+<p><a href="https://www.linkedin.com/in/abdallaheldaly/">Linkedin</a></p>
+<p><a href="https://github.com/abdallaheldaly">GitHub</a></p>
+<p><a href="https://www.youtube.com/channel/UCWI8Y-otDYNJc7iYapNm-jQ">YouTube</a></p>
+<p><a href="https://stackoverflow.com/users/11617549/abdallah-el-daly">Stack Overflow</a></p>
+<p><a href="https://maps.app.goo.gl/DRzB7j831CBadCjm7">Local Guide</a></p>
+<p><a href="https://t.me/abdallaheldaly">Telegram</a></p>
 
-<h3 align="left">Languages and Tools:</h3>
+
+
+
+
+
+
+<!-- <h3 align="left">Languages and Tools:</h3>
 
 <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" title="Python" alt="Python" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/jupyter/jupyter-original-wordmark.svg" title="Jupyter" alt="Jupyter" width="40" height="40"/>&nbsp;
@@ -47,5 +43,5 @@ I'm Software Developer in Egypt:
 <img src="https://github.com/devicons/devicon/blob/master/icons/express/express-original-wordmark.svg" title="Express" alt="Express" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" alt="Git" width="40" height="40"/>&nbsp;
 
-<!--<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=AbdallahEl-Daly" /></p>->
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=AbdallahEl-Daly" /></p> -->
 
