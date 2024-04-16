@@ -10,15 +10,12 @@ I'm Software Developer in Egypt:
 
 
 <h3 align="left">Connect with me:</h3>
-<p><a href="https://www.linkedin.com/in/abdallaheldaly/">Linkedin</a></p>
-<p><a href="https://github.com/abdallaheldaly">GitHub</a></p>
-<p><a href="https://www.youtube.com/channel/UCWI8Y-otDYNJc7iYapNm-jQ">YouTube</a></p>
-<p><a href="https://stackoverflow.com/users/11617549/abdallah-el-daly">Stack Overflow</a></p>
-<p><a href="https://maps.app.goo.gl/DRzB7j831CBadCjm7">Local Guide</a></p>
-<p><a href="https://t.me/abdallaheldaly">Telegram</a></p>
-
-
-
+<a href="https://www.linkedin.com/in/abdallaheldaly/">Linkedin  </a>
+<a href="https://github.com/abdallaheldaly">GitHub  </a>
+<a href="https://www.youtube.com/channel/UCWI8Y-otDYNJc7iYapNm-jQ">YouTube  </a>
+<a href="https://stackoverflow.com/users/11617549/abdallah-el-daly">Stack_Overflow  </a>
+<a href="https://maps.app.goo.gl/DRzB7j831CBadCjm7">Local_Guide </a>
+<a href="https://t.me/abdallaheldaly">Telegram  </a>
 
 
 
