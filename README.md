@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Abdallah El-Daly</h1>
 
-**AbdallahEl-Daly/AbdallahEl-Daly** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!--**AbdallahEl-Daly/AbdallahEl-Daly** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.-->
 
 I'm Software Developer in Egypt:
 <!--🔭 I’m currently working on ...
