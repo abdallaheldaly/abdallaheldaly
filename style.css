@@ -6,21 +6,31 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 header {
-    background-color: #004d99;
+    background-color: hsl(210, 27%, 52%);
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
-    margin-bottom: 10px;
     font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 15px;
 }
 
 header nav a {
@@ -35,20 +45,19 @@ header nav a:hover {
 }
 
 section {
-    padding: 20px;
-    margin: 10px;
     background-color: white;
+    padding: 20px;
+    margin: 10px 0;
     border-radius: 10px;
 }
 
 h2 {
-    margin-bottom: 15px;
-    color: #004d99;
+    margin-bottom: 10px;
     font-size: 1.8em;
+    color: #0056b3;
 }
 
-.skill-section,
-.job {
+.skill-section, .job {
     margin-bottom: 20px;
 }
 
@@ -60,9 +69,7 @@ ul {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #004d99;
+    background-color: #0056b3;
     color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin-top: 20px;
 }
