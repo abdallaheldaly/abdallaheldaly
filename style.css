@@ -51,12 +51,21 @@ section {
     border-radius: 10px;
 }
 
-h2 {
-    margin-bottom: 10px;
-    font-size: 1.8em;
+h1, h2, h3 {
     color: #0056b3;
 }
-
+h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+}
+h3 {
+    font-size: 1.4em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
 .skill-section, .job {
     margin-bottom: 20px;
 }
@@ -72,4 +81,20 @@ footer {
     background-color: #0056b3;
     color: white;
     margin-top: 20px;
+}
+
+/* Resume Link */
+.resume-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2980b9; /* Blue background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.resume-link:hover {
+    background-color: #2472a4; /* Darker blue on hover */
 }
