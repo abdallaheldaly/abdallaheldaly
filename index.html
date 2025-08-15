@@ -7,102 +7,101 @@
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/43/Hacker_behind_PC.svg" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --bg-color: #111;
-      --text-color: #fff;
-      --accent-color: #4caf50;
-    }
-
-    @media (prefers-color-scheme: light) {
-      :root {
-        --bg-color: #fff;
-        --text-color: #000;
-        --accent-color: #4caf50;
-      }
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
-      text-align: center;
+      min-height: 100vh;
     }
-
     .container {
-      max-width: 960px;
-      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 900px;
+      width: 90%;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
     }
-
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.2em;
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+      background: linear-gradient(to right, #4caf50, #8bc34a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-
-    p {
-      font-size: 1.1em;
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
     }
-
+    .contact p {
+      margin-top: 15px;
+      font-size: 1rem;
+    }
+    .contact a {
+      color: #4caf50;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .contact a:hover {
+      color: #8bc34a;
+    }
     section {
       margin: 30px 0;
     }
-
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 5px;
+    }
     .social {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
+      gap: 15px;
     }
-
     .social a img {
       width: 40px;
       height: 40px;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      padding: 5px;
     }
-
     .social a:hover img {
       transform: scale(1.2);
+      box-shadow: 0 0 10px #4caf50;
     }
-
     .btn-resume {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: var(--accent-color);
+      padding: 12px 25px;
+      margin-top: 15px;
+      background: linear-gradient(90deg, #4caf50, #8bc34a);
       color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
       font-weight: bold;
-    }
-
-    .btn-resume:hover {
-      background-color: #388e3c;
-    }
-
-    .contact a {
-      color: var(--accent-color);
       text-decoration: none;
+      border-radius: 30px;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
-
-    .contact a:hover {
-      text-decoration: underline;
+    .btn-resume:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
-
     footer {
-      font-size: 0.9em;
+      margin-top: 25px;
+      font-size: 0.9rem;
       opacity: 0.6;
-      margin-top: 30px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -121,36 +120,36 @@
     <main>
       <section>
         <h2>About Me</h2>
-        <p>I'm Abdallah El-Daly — a passionate technology professional who loves to innovate, learn, and connect. I build projects and help communities.</p>
+        <p>I am a passionate technology professional with a deep interest in innovation, learning, and community engagement. I create impactful projects, contribute to open-source, and help communities grow.</p>
       </section>
 
-<section>
-        <h2 id="social-heading">Social Media &amp; <a href="profile.html">Profiles</a></h2>
-  <div class="social">
-    <a href="https://linkedin.com/in/abdallaheldaly" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>
-    <a href="https://github.com/abdallaheldaly" target="_blank"><img src="https://www.logo.wine/a/logo/GitHub/GitHub-Logo.wine.svg" alt="GitHub" height="30" width="40" /></a>
-    <a href="https://t.me/abdallaheldaly" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" height="30" width="40" /></a>
-    <a href="https://wa.me/+201094304557" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" height="30" width="30" /></a>
-    <a href="https://www.facebook.com/abdallaheldaly0" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" height="30" width="30" /></a>
-    <a href="https://www.cloudskillsboost.google/public_profiles/f49563fd-7bfe-4f5a-b95e-a582ecf598de" target="_blank"><img src="https://cdn.qwiklabs.com/assets/gcp_cloud-e3a77215f0b8bfa9b3f611c0d2208c7e8708ed31.svg" alt="Qwiklabs" height="30" width="30" /></a>
-    <a href="https://twitter.com/abdallahaboelm5" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Twitter" height="30" width="40" /></a>
-    <a href="https://stackoverflow.com/users/11617549/abdallah-el-daly" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="Stack Overflow" height="30" width="40" /></a>
-    <a href="https://kaggle.com/abdallahaboelmakarem" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="Kaggle" height="30" width="40" /></a>
-    <a href="https://www.youtube.com/@abdallaheldaly" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="YouTube" height="30" width="40" /></a>
-    <a href="https://www.hackerrank.com/abdallah_m_daly" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="HackerRank" height="30" width="40" /></a>
-    <a href="https://www.leetcode.com/abdallahaboelmakarem" target="_blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="LeetCode" height="30" width="40" /></a>
-    <a href="https://www.khanacademy.org/profile/kaid_103394333841271470454407/badges" target="_blank"><img src="https://play-lh.googleusercontent.com/TpK0AcjPn5-XDKgSZ5jAob1H7MsQuJILOMR4M4QYkTt5CBPgTJVr7mysrKM6Ia8SrX8=w480-h960-rw" alt="Khan Academy" height="30" width="40" /></a>
-    <a href="https://www.google.com/maps/contrib/118255481196105937498/contribute" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Google_Maps_icon_%282015-2020%29.svg" alt="Google Maps" height="30" width="30" /></a>
-    <a href="https://www.tiktok.com/@abdallaheldaly0" target="_blank"><img src="image/tiktok.png" alt="TikTok" height="30" width="40" /></a>
-    <a href="https://ipn.eg/S/abdallaheldaly0/instapay/9VFNki" target="_blank"><img src="https://d1nxzqpcg2bym0.cloudfront.net/google_play/com.egyptianbanks.instapay/091c5064-a033-11ec-ba12-4788a868d3db/128x128" alt="InstaPay" height="30" width="40" /></a>
-    <a href="https://www.paypal.com/paypalme/ABDALLAHELDAL" target="_blank"><img src="https://www.svgrepo.com/show/328122/paypal.svg" alt="PayPal" height="30" width="40" /></a>
-  </div>
-</section>
-
+      <section>
+        <h2>Social Media & <a href="https://abdallaheldaly.github.io/abdallaheldaly/profile" target="_blank" rel="noopener">Online Profiles</a></h2>
+        <div class="social">
+          <a href="https://linkedin.com/in/abdallaheldaly" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn"></a>
+          <a href="https://github.com/abdallaheldaly" target="_blank" rel="noopener"><img src="https://www.logo.wine/a/logo/GitHub/GitHub-Logo.wine.svg" alt="GitHub"></a>
+          <a href="https://t.me/abdallaheldaly" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram"></a>
+          <a href="https://wa.me/+201094304557" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
+          <a href="https://www.facebook.com/abdallaheldaly0" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+          <a href="https://www.cloudskillsboost.google/public_profiles/f49563fd-7bfe-4f5a-b95e-a582ecf598de" target="_blank" rel="noopener"><img src="https://cdn.qwiklabs.com/assets/gcp_cloud-e3a77215f0b8bfa9b3f611c0d2208c7e8708ed31.svg" alt="Qwiklabs"></a>
+          <a href="https://twitter.com/abdallahaboelm5" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="Twitter"></a>
+          <a href="https://stackoverflow.com/users/11617549/abdallah-el-daly" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="StackOverflow"></a>
+          <a href="https://kaggle.com/abdallahaboelmakarem" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="Kaggle"></a>
+          <a href="https://www.youtube.com/@abdallaheldaly" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="YouTube"></a>
+          <a href="https://www.hackerrank.com/abdallah_m_daly" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="HackerRank"></a>
+          <a href="https://www.leetcode.com/abdallahaboelmakarem" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="LeetCode"></a>
+          <a href="https://www.khanacademy.org/profile/kaid_103394333841271470454407/badges" target="_blank" rel="noopener"><img src="https://play-lh.googleusercontent.com/TpK0AcjPn5-XDKgSZ5jAob1H7MsQuJILOMR4M4QYkTt5CBPgTJVr7mysrKM6Ia8SrX8=w480-h960-rw" alt="Khan Academy"></a>
+          <a href="https://www.google.com/maps/contrib/118255481196105937498/contribute/@29.9548011,31.2965273,12z" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Google_Maps_icon_%282015-2020%29.svg" alt="Google Maps"></a>
+          <a href="https://www.tiktok.com/@abdallaheldaly0" target="_blank" rel="noopener"><img src="image/tiktok.png" alt="TikTok"></a>
+          <a href="https://ipn.eg/S/abdallaheldaly0/instapay/9VFNki" target="_blank" rel="noopener"><img src="https://d1nxzqpcg2bym0.cloudfront.net/google_play/com.egyptianbanks.instapay/091c5064-a033-11ec-ba12-4788a868d3db/128x128" alt="InstaPay"></a>
+          <a href="https://www.paypal.com/paypalme/ABDALLAHELDAL" target="_blank" rel="noopener"><img src="https://www.svgrepo.com/show/328122/paypal.svg" alt="PayPal"></a>
+          <a href="https://www.showaround.com/locals/10464626" target="_blank" rel="noopener"><img src="image/showaround.png" alt="Showaround"></a>
+        </div>
+      </section>
 
       <section>
-        <h2>Download My Resume</h2>
-        <a href="Abdallah_El-Daly_Resume.pdf" class="btn-resume" download>Download Resume</a>
+        <h2>Resume</h2>
+        <a href="Abdallah_El-Daly_Resume.pdf" class="btn-resume" download>📄 Download Resume</a>
       </section>
     </main>
 

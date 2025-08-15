@@ -1,160 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Live Location Sharing App</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/43/Hacker_behind_PC.svg" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Live Location Sharing App — Ihsan Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/43/Hacker_behind_PC.svg" type="image/svg+xml" />
+
   <style>
-    /* Global Styles */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
+    :root{
+      --bg: #0f172a;           /* slate-900 */
+      --card: #0b1224;        /* darker slate */
+      --soft: #101a33;       
+      --text: #e5e7eb;        /* gray-200 */
+      --muted: #94a3b8;       /* slate-400 */
+      --accent: #10b981;      /* emerald-500 */
+      --accent-2: #f59e0b;    /* amber-500 */
+      --ring: rgba(16,185,129,.35);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
     }
-    a {
-      color: #3498db;
-      text-decoration: none;
-      transition: color 0.3s ease;
+
+    [data-theme="light"]{
+      --bg:#f8fafc;           /* slate-50 */
+      --card:#ffffff; 
+      --soft:#f1f5f9;         /* slate-100 */
+      --text:#0f172a;         /* slate-900 */
+      --muted:#475569;        /* slate-600 */
+      --accent:#0ea5e9;       /* sky-500 */
+      --accent-2:#22c55e;     /* green-500 */
+      --ring: rgba(14,165,233,.25);
+      --shadow: 0 8px 24px rgba(2,6,23,.12);
     }
-    a:hover {
-      color: #217dbb;
+
+    * { box-sizing: border-box; }
+    html, body { height:100%; }
+    body{
+      margin:0; font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 20% -10%, rgba(16,185,129,.12), transparent),
+                  radial-gradient(1000px 700px at 120% 20%, rgba(245,158,11,.10), transparent),
+                  var(--bg);
+      color:var(--text); line-height:1.8; letter-spacing:.2px;
     }
-    .container {
-      max-width: 960px;
-      margin: 20px auto;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      overflow: hidden;
+
+    .container{ max-width:1100px; margin-inline:auto; padding:24px; }
+
+    /* Header (Hero) */
+    .hero{
+      position:relative; overflow:hidden; border-radius:28px; background:linear-gradient(180deg,var(--card),var(--soft));
+      padding:36px 24px; box-shadow: var(--shadow); border:1px solid rgba(148,163,184,.12);
     }
-    header {
-      background: linear-gradient(135deg, #2c3e50, #4ca1af);
-      color: #fff;
-      padding: 30px;
-      text-align: center;
+    .hero::after{
+      content:""; position:absolute; inset:auto -30% -30% auto; width:420px; height:420px;
+      background: radial-gradient(closest-side, rgba(16,185,129,.18), transparent 70%);
+      filter: blur(12px);
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    main {
-      padding: 20px;
-    }
-    .section {
-      padding: 20px;
-      border-left: 5px solid #3498db;
-      background-color: #f9f9f9;
-      margin-bottom: 20px;
-    }
-    .section h2 {
-      margin-top: 0;
-      color: #2c3e50;
-    }
-    .centered {
-      text-align: center;
-    }
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      height: 0;
-      overflow: hidden;
-      margin: 20px 0;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: rgb(21, 185, 53);
-      color: #fff;
-      border-radius: 5px;
-      text-transform: uppercase;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-    }
-    .btn:hover {
-      background-color: rgb(43, 192, 95);
-    }
-    footer {
-      background-color: #2c3e50;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-    }
+    .hero-top{ display:flex; gap:18px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+    .title{ font-size:clamp(28px, 3.2vw, 40px); margin:0; font-weight:800; letter-spacing:.3px; }
+    .subtitle{ margin:6px 0 0; color:var(--muted); font-weight:500; }
+
+    .contact{ display:flex; flex-wrap:wrap; gap:10px 14px; align-items:center; }
+    .pill{ display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:999px; background:var(--soft); color:var(--text); border:1px solid rgba(148,163,184,.14); text-decoration:none; font-weight:700; }
+    .pill:hover{ outline:3px solid var(--ring); }
+
+    .cta{ display:flex; gap:12px; margin-top:18px; flex-wrap:wrap; }
+    .btn{ appearance:none; border:none; cursor:pointer; padding:12px 18px; border-radius:14px; font-weight:800; letter-spacing:.3px; transition:.2s transform ease; box-shadow:var(--shadow); text-decoration:none; display:inline-block; }
+    .btn-primary{ background:linear-gradient(135deg, var(--accent), var(--accent-2)); color:white; }
+    .btn-ghost{ background:transparent; border:1px solid rgba(148,163,184,.20); color:var(--text); }
+    .btn:active{ transform:translateY(1px); }
+
+    .toggle{ margin-inline-start:auto; display:inline-flex; align-items:center; gap:8px; cursor:pointer; user-select:none; }
+    .toggle input{ appearance:none; width:44px; height:26px; border-radius:999px; background:var(--soft); border:1px solid rgba(148,163,184,.25); position:relative; outline:none; }
+    .toggle input::after{ content:""; position:absolute; inset:3px auto 3px 3px; width:18px; border-radius:999px; background:white; transition:all .2s ease; }
+    .toggle input:checked{ background:linear-gradient(90deg,var(--accent),var(--accent-2)); }
+    .toggle input:checked::after{ inset:3px 3px 3px auto; }
+
+    /* Sections */
+    section{ margin-top:26px; }
+    .section-card{ background:linear-gradient(180deg,var(--card),var(--soft)); padding:24px; border-radius:22px; border:1px solid rgba(148,163,184,.12); box-shadow:var(--shadow); }
+    h2{ margin:0 0 14px; font-size:22px; letter-spacing:.4px; }
+    .muted{ color:var(--muted); }
+
+    /* Grid helpers */
+    .grid-2{ display:grid; grid-template-columns: 1fr 1fr; gap:18px; }
+    .grid-3{ display:grid; grid-template-columns: repeat(3, 1fr); gap:18px; }
+    @media (max-width: 800px){ .grid-2, .grid-3{ grid-template-columns: 1fr; } }
+
+    /* Video */
+    .video-wrap{ position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:16px; }
+    .video-wrap iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+
+    /* List */
+    ul{ margin:8px 0 0 18px; padding:0; }
+    li{ margin:6px 0; }
+
+    /* Footer */
+    footer{ margin:30px 0 10px; text-align:center; color:var(--muted); font-size:14px; }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Live Location Sharing App</h1>
-      <p>
-        Share your real-time location with friends and groups using a robust, secure platform.
-      </p>
-    </header>
-    <main>
-      <!-- About Section -->
-      <section class="section">
-        <h2>About the App</h2>
-        <p>
-          Our app allows users to share their live location within a group in real-time. It’s built with a powerful <strong>Python (Django)</strong> backend and a sleek <strong>Dart (Flutter)</strong> mobile interface. Leveraging <strong>Google Maps APIs</strong> ensures accurate tracking, and the app is fully compliant with Google Play Store policies while being hosted on <strong>Namecheap</strong>.
-        </p>
-      </section>
-
-      <!-- Technology Stack Section -->
-      <section class="section">
-        <h2>Technology Stack</h2>
-        <ul>
-          <li><strong>Backend:</strong> Python (Django)</li>
-          <li><strong>Frontend:</strong> Dart (Flutter)</li>
-          <li><strong>APIs:</strong> Google Maps (Licensed)</li>
-        </ul>
-      </section>
-
-      <!-- Demo Video Section (Placed in the Middle) -->
-      <section class="section centered">
-        <h2>Demo Video</h2>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/7BRWGe-CUx4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="container" id="app">
+    <header class="hero" aria-label="Hero">
+      <div class="hero-top">
+        <div>
+          <h1 class="title">Live Location Sharing App</h1>
+          <p class="subtitle">Share your real-time location with friends and groups — fast, private, and reliable.</p>
         </div>
-      </section>
+        <label class="toggle" title="Toggle Theme">
+          <span class="muted">Light Mode</span>
+          <input id="themeToggle" type="checkbox" aria-label="Toggle light/dark theme" />
+        </label>
+      </div>
 
-      <!-- Download Section -->
-      <section class="section">
-        <h2>Download the App</h2>
-        <p>Click the button below to download the APK:</p>
-        <a class="btn" href="https://apkpure.com/flock-follow/com.example.flock_follow" target="_blank">Download APK</a>
-      </section>
+      <div class="cta" style="margin-top:12px">
+        <a class="btn btn-primary" href="#download">Download APK</a>
+        <a class="btn btn-ghost" href="#demo">Watch Demo</a>
+        <a class="btn btn-ghost" href="#stack">Tech Stack</a>
+        <a class="btn btn-ghost" href="#github">GitHub Repo</a>
+      </div>
 
-      <!-- GitHub Repository Section -->
-      <section class="section">
-        <h2>GitHub Repository</h2>
-        <p>Check out the project on GitHub:</p>
-        <a class="btn" href="https://github.com/mabdelaal86/flock-follow" target="_blank">View on GitHub</a>
-      </section>
+      <div class="contact" style="margin-top:12px">
+        <a class="pill" href="mailto:abdallah.m.daly@gmail.com">Support: abdallah.m.daly@gmail.com</a>
+        <a class="pill" href="tel:+201094304557">+20 109 430 4557</a>
+      </div>
+    </header>
 
-      <!-- Hosting and Compliance Section -->
-      <section class="section">
-        <h2>Hosting &amp; Compliance</h2>
-        <p>
-          The app is hosted on <strong>Namecheap</strong> for reliable performance. All necessary approvals and policy authentications have been acquired for full <strong>Google Play Store</strong> compliance.
-        </p>
-      </section>
-    </main>
+    <!-- About -->
+    <section id="about" class="section-card">
+      <h2>About the App</h2>
+      <p>
+        The app lets users share their <strong>live location</strong> with friends or within groups in real-time. 
+        It features a robust <strong>Python (Django)</strong> backend and a sleek <strong>Flutter (Dart)</strong> mobile interface. Using 
+        <strong>Google Maps APIs</strong> ensures accurate tracking. It’s Play Store–policy compliant and can be hosted on <strong>Namecheap</strong>.
+      </p>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="stack" class="section-card">
+      <h2>Technology Stack</h2>
+      <ul>
+        <li><strong>Backend:</strong> Python (Django)</li>
+        <li><strong>Frontend:</strong> Flutter (Dart)</li>
+        <li><strong>APIs:</strong> Google Maps (Licensed)</li>
+      </ul>
+    </section>
+
+    <!-- Demo -->
+    <section id="demo" class="section-card">
+      <h2>Demo Video</h2>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/7BRWGe-CUx4" title="Live Location Sharing App Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="section-card">
+      <h2>Download the App</h2>
+      <p>Click the button to download the APK:</p>
+      <a class="btn btn-primary" href="https://apkpure.com/flock-follow/com.example.flock_follow" target="_blank" rel="noopener">Download APK</a>
+    </section>
+
+    <!-- GitHub -->
+    <section id="github" class="section-card">
+      <h2>GitHub Repository</h2>
+      <p>Explore the source code and contribute:</p>
+      <a class="btn btn-ghost" href="https://github.com/mabdelaal86/flock-follow" target="_blank" rel="noopener">View on GitHub</a>
+    </section>
+
+    <!-- Hosting & Compliance -->
+    <section id="hosting" class="section-card">
+      <h2>Hosting &amp; Compliance</h2>
+      <p>
+        The backend can be hosted on <strong>Namecheap</strong> for reliable performance. All required approvals and policy checks have been aligned for full <strong>Google Play Store</strong> compliance.
+      </p>
+    </section>
+
     <footer>
-      <p>&copy; 2025 Live Location Sharing App</p>
+      <p>© 2025 Live Location Sharing App — “Ihsan” Design</p>
     </footer>
   </div>
+
+  <script>
+    // Theme toggle persistence
+    const root = document.documentElement;
+    const toggle = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('ihsan-theme');
+    if(saved === 'light'){ root.setAttribute('data-theme','light'); toggle.checked = true; }
+    toggle.addEventListener('change', () => {
+      const isLight = toggle.checked;
+      root.setAttribute('data-theme', isLight ? 'light' : '');
+      localStorage.setItem('ihsan-theme', isLight ? 'light' : 'dark');
+    });
+  </script>
 </body>
 </html>
