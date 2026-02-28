@@ -65,14 +65,6 @@
 
 &gt; A comprehensive PWA for managing spare parts inventory. Features include stock tracking, search functionality, and offline support. Built for Arabic-speaking users.
 
----
-
-### 4. Events Page
-**Interactive Events Showcase**
-
-[![View Code](https://img.shields.io/badge/View_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/abdallaheldaly/abdallaheldaly/blob/main/events.html)
-
-&gt; A responsive events listing page with modern UI design and interactive elements.
 
 ---
 
@@ -93,7 +85,6 @@
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/abdallahaboelmakarem/)
 [![Google Skills](https://img.shields.io/badge/Google_Skills-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://www.skills.google/public_profiles/f49563fd-7bfe-4f5a-b95e-a582ecf598de)
 
-&lt;/div&gt;
 
 ---
 
