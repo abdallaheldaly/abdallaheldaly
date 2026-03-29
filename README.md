@@ -1,6 +1,4 @@
-
-  
-  ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Abdallah%20El-Dely&fontSize=50&fontAlignY=35&animation=twinkling&desc=Software%20Developer%20|%20Game%20Developer%20|%20Web%20Developer%20|%20BackEnd%20Developer&descAlignY=55)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Abdallah%20El-Dely&fontSize=50&fontAlignY=35&animation=twinkling&desc=Software%20Developer%20|%20Game%20Developer%20|%20Web%20Developer%20|%20BackEnd%20Developer&descAlignY=55)
 
   [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2E9EF7&center=true&vCenter=true&width=435&lines=Welcome+to+my+GitHub+Profile!;I+build+games%2C+web+apps%2C+and+tools;Always+learning+new+technologies)](https://git.io/typing-svg)
 
@@ -49,7 +47,24 @@
 
 ---
 
-### 2. Counter PWA
+### 2. Gym Pro - Gym Management System
+**Progressive Web App - Gym Membership Management**
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://abdallaheldaly.github.io/Projects/PWA/Gym/index.html)
+[![PWA](https://img.shields.io/badge/PWA-Ready-blue?style=for-the-badge&logo=pwa&logoColor=white)](https://abdallaheldaly.github.io/Projects/PWA/Gym/index.html)
+
+&gt; A comprehensive PWA for managing gym memberships, attendance tracking, and financial records. Features include member management, subscription tracking, attendance calendar, revenue analytics, and portable data backup/export. Built with vanilla JavaScript, HTML5, and CSS3 — no frameworks, no backend required. Data is stored in-memory with JSON export/import for easy portability between devices.
+
+**Key Features:**
+- 📊 Dashboard with real-time statistics and revenue tracking
+- 👥 Member management with subscription details
+- ✅ Daily attendance tracking with calendar view
+- 💾 Data export/import (portable between devices)
+- 📱 Works offline as standalone PWA
+
+---
+
+### 3. Counter PWA
 **Progressive Web App - Counter Tool**
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://abdallaheldaly.github.io/Projects/PWA/Counter/index.html)
@@ -58,7 +73,7 @@
 
 ---
 
-### 3. Spare Parts Management System
+### 4. Spare Parts Management System
 **Inventory Management PWA (Arabic Interface)**
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://abdallaheldaly.github.io/Projects/PWA/SparePartsManagementSystem/%D9%86%D8%B8%D8%A7%D9%85_%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9_%D9%82%D8%B7%D8%B9_%D8%A7%D9%84%D8%BA%D9%8A%D8%A7%D8%B1.html)
@@ -99,9 +114,7 @@
 
 ---
 
-
   
   ⭐️ From [Abdallah El-Dely](https://github.com/abdallaheldaly)
   
   ![Profile Views](https://komarev.com/ghpvc/?username=abdallaheldaly&color=blueviolet&style=flat-square)
-
