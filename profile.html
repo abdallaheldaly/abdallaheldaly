@@ -293,6 +293,9 @@
     /* ── SECTION ── */
     .section {
       margin-bottom: 20px;
+    }
+
+    .hero.section {
       animation: fadeUp 0.7s ease both;
     }
 
@@ -564,6 +567,125 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
+    /* ── UI POLISH ── */
+    .badge-current {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 10px;
+      margin-left: 8px;
+      border-radius: 999px;
+      background: rgba(0,229,160,0.1);
+      border: 1px solid rgba(0,229,160,0.35);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      vertical-align: middle;
+    }
+
+    .badge-current::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+
+    .tl-dot-current {
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(0,229,160,0.5); }
+      50%      { box-shadow: 0 0 0 6px rgba(0,229,160,0); }
+    }
+
+    .tl-body, .card {
+      transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .tl-body:hover {
+      border-color: rgba(0,229,160,0.3);
+      transform: translateX(3px);
+    }
+
+    .card:hover {
+      border-color: rgba(255,255,255,0.13);
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Keyboard focus */
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+
+    /* Mobile top nav */
+    .mobile-nav {
+      display: none;
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      background: rgba(8,12,16,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 16px;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .mobile-nav::-webkit-scrollbar { display: none; }
+
+    .mobile-nav a {
+      display: inline-block;
+      padding: 6px 13px;
+      margin-right: 6px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface2);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .mobile-nav a:hover, .mobile-nav a.active {
+      color: var(--accent);
+      border-color: rgba(0,229,160,0.4);
+    }
+
+    @media (max-width: 900px) {
+      .mobile-nav { display: block; }
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001s !important;
+        transition-duration: 0.001s !important;
+      }
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; }
+    }
+
     .section:nth-child(1) { animation-delay: 0.05s; }
     .section:nth-child(2) { animation-delay: 0.1s; }
     .section:nth-child(3) { animation-delay: 0.15s; }
@@ -611,6 +733,15 @@
   </nav>
 
   <div class="main">
+    <nav class="mobile-nav" aria-label="Sections">
+      <a href="#top">Profile</a>
+      <a href="#personal">Personal</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#volunteering">Volunteering</a>
+      <a href="#skills">Skills</a>
+      <a href="#awards">Awards</a>
+    </nav>
     <div class="wrap">
 
       <!-- HERO -->
@@ -618,9 +749,9 @@
         <div class="hero-top">
           <div class="avatar">A</div>
           <div class="hero-info">
-            <div class="hero-role">Program Coordinator · Business Dev · Software Dev</div>
+            <div class="hero-role">Executive Support · Tech Sales · Software Dev</div>
             <h1>Abdallah El-Daly</h1>
-            <p class="hero-subtitle">Cybersecurity Sales Executive at Beta Technology Egypt · Cairo, Egypt</p>
+            <p class="hero-subtitle">Executive Assistant to the CEO at Ceramica Plus · Cairo, Egypt</p>
           </div>
         </div>
         <div class="hero-contact">
@@ -685,10 +816,35 @@
         <div class="card">
           <div class="timeline">
             <div class="tl-item">
+              <div class="tl-track"><div class="tl-dot tl-dot-current"></div><div class="tl-line"></div></div>
+              <div class="tl-body">
+                <h3>Ceramica Plus — <span class="tl-role">Executive Assistant to the CEO</span> <span class="badge-current">Current</span></h3>
+                <div class="tl-date">Apr 2026 – Present · Full-time · Cairo, Egypt</div>
+                <p>Right hand to the CEO — running executive operations, strategic projects, and cross-functional coordination across the company.</p>
+                <ul>
+                  <li><strong>Executive Operations:</strong> Calendar, meetings, travel, agendas, minutes, and follow-up on action items across departments.</li>
+                  <li><strong>Reporting:</strong> Executive reports, presentations, and dashboards; tracking implementation of executive decisions.</li>
+                  <li><strong>Stakeholders:</strong> Primary contact for vendors, agencies, and partners; welcoming clients and VIP visitors.</li>
+                  <li><strong>Coordination:</strong> Working with Marketing on campaigns and with IT on system improvements and digital transformation.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-track"><div class="tl-dot"></div><div class="tl-line"></div></div>
+              <div class="tl-body">
+                <h3>ATM Group — <span class="tl-role">IT Sales Executive</span></h3>
+                <div class="tl-date">Sep 2025 – Feb 2026 · Full-time · Cairo, Egypt</div>
+                <ul>
+                  <li><strong>Hardware & Infrastructure:</strong> Laptops, desktops, printers, servers, CCTV, firewalls, switches, routers, and structured cabling.</li>
+                  <li><strong>Software:</strong> Windows operating systems and Microsoft Office solutions for business clients.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tl-item">
               <div class="tl-track"><div class="tl-dot"></div><div class="tl-line"></div></div>
               <div class="tl-body">
                 <h3>Beta Technology Egypt — <span class="tl-role">Cybersecurity Sales Executive</span></h3>
-                <div class="tl-date">March 2025 – Present · Full-time · Giza, Egypt</div>
+                <div class="tl-date">Mar 2025 – Aug 2025 · Full-time · Giza, Egypt</div>
                 <p>Empowering enterprises to strengthen digital defenses with tailored security frameworks. Managing the full sales lifecycle from identifying security gaps to PoC workshops.</p>
                 <ul>
                   <li><strong>Fortinet:</strong> FortiGate NGFWs with application-aware visibility, SSL/IPSec inspection, SD-WAN, and FortiGuard AI threat mitigation.</li>
@@ -920,6 +1076,33 @@
 
     </div>
   </div>
+
+  <script>
+    // Scroll reveal
+    const sections = document.querySelectorAll('.section:not(.hero)');
+    sections.forEach(s => s.classList.add('reveal'));
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    sections.forEach(s => revealObs.observe(s));
+
+    // Scrollspy — highlight active nav link (sidebar + mobile)
+    const navLinks = document.querySelectorAll('.nav-link[href^="#"], .mobile-nav a[href^="#"]');
+    const spyTargets = [...document.querySelectorAll('section[id], header[id]')];
+    const spyObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+        }
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    spyTargets.forEach(t => spyObs.observe(t));
+  </script>
 
 </body>
 </html>
