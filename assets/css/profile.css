@@ -1,0 +1,76 @@
+/* profile.css — profile.html */
+.sidebar {
+  position: fixed; left: 0; top: 0; bottom: 0; width: 232px; z-index: 50;
+  display: flex; flex-direction: column; padding: 32px 0;
+  background: var(--surface); border-right: 1px solid var(--line);
+}
+.sidebar-logo { padding: 0 26px 24px; display: flex; flex-direction: column; gap: 2px; }
+.sidebar-logo strong { font-family: var(--display); font-size: 1.05rem; font-weight: 700; }
+.sidebar-logo span { font-family: var(--display); font-size: 0.85rem; color: var(--muted); }
+
+.nav-link {
+  font-family: var(--display); font-size: 0.95rem; font-weight: 500;
+  color: var(--muted); text-decoration: none;
+  padding: 9px 26px; border-left: 3px solid transparent;
+}
+.nav-link:hover { color: var(--ink); }
+.nav-link.active { color: var(--ink); border-left-color: var(--gold); background: var(--tint); }
+
+.sidebar-footer { margin-top: auto; padding: 20px 26px 0; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--line); }
+.sidebar-footer a { font-family: var(--display); font-size: 0.9rem; color: var(--muted); text-decoration: none; }
+.sidebar-footer a:hover { color: var(--lapis); }
+
+.main { margin-left: 232px; }
+.main .wrap { max-width: 820px; padding-bottom: 40px; }
+
+.mobile-nav {
+  display: none; position: sticky; top: 0; z-index: 60;
+  background: var(--surface); border-bottom: 1px solid var(--line);
+  padding: 8px var(--gutter); overflow-x: auto; white-space: nowrap; scrollbar-width: none;
+}
+.mobile-nav::-webkit-scrollbar { display: none; }
+.mobile-nav a {
+  display: inline-flex; align-items: center; min-height: 40px; padding: 4px 16px; margin-right: 6px; border-radius: 999px;
+  font-family: var(--display); font-size: 0.9rem; font-weight: 500;
+  color: var(--muted); text-decoration: none; border: 1px solid var(--line);
+}
+.mobile-nav a.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+@media (max-width: 1000px) {
+  .sidebar { display: none; }
+  .main { margin-left: 0; }
+  .mobile-nav { display: block; }
+}
+
+.profile-hero { padding: clamp(36px, 7vw, 76px) 0 36px; animation: rise .6s ease-out both; }
+.hero-role { font-family: var(--display); font-size: 0.95rem; font-weight: 500; color: var(--muted); margin-bottom: 14px; }
+.profile-hero h1 { font-size: clamp(2.5rem, 9vw, 4.6rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
+.hero-subtitle { margin-top: 16px; font-size: 1.15rem; max-width: 34rem; line-height: 1.5; }
+.profile-hero .contact { display: flex; flex-wrap: wrap; gap: 4px 28px; margin-top: 20px; font-family: var(--display); }
+.profile-hero .contact a { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: var(--ink); font-weight: 500; text-decoration-color: var(--gold); text-decoration-thickness: 2px; }
+.profile-hero .contact .ic { width: 22px; height: 22px; }
+.profile-hero .btn-row { margin-top: 22px; }
+.profile-hero .chips { margin-top: 26px; }
+
+.section { padding: 40px 0; border-top: 1px solid var(--line); }
+.section > h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 22px; }
+.grid-2 { display: block; }
+.card { background: transparent; }
+
+/* personal info */
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 22px 28px; }
+.info-item .label { font-family: var(--display); font-size: 0.85rem; font-weight: 500; color: var(--muted); }
+.info-item .value { font-size: 1.05rem; }
+
+/* skills */
+.skill-group { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 8px 24px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.skill-group:first-child { padding-top: 0; }
+.skill-group:last-child { border-bottom: 0; padding-bottom: 0; }
+.skill-label { font-family: var(--display); font-weight: 600; font-size: 0.95rem; color: var(--muted); }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 6px 8px; }
+@media (max-width: 600px) { .skill-group { grid-template-columns: 1fr; } }
+
+/* awards */
+.award-item { display: flex; align-items: baseline; gap: 14px; }
+.award-title { font-family: var(--display); font-size: 1.15rem; font-weight: 700; }
+.award-sub { color: var(--muted); }

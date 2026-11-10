@@ -1,0 +1,92 @@
+/* ============================================================
+   base.css — design tokens, reset, typography, layout shell
+   Lapis ink + gold on a cool paper ground. Follows system light/dark.
+   ============================================================ */
+
+:root {
+  --bg: #edf0f5;
+  --surface: #ffffff;
+  --tint: #e3e8f2;
+  --ink: #0e2148;
+  --muted: #55627d;
+  --line: #d3dae7;
+  --lapis: #2447c5;
+  --on-lapis: #ffffff;
+  --gold: #b7821c;
+  --live: #0f8f89;
+
+  --display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+  --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --radius: 12px;
+  --gutter: clamp(18px, 5vw, 40px);
+  --tap: 48px; /* minimum comfortable touch target */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1730;
+    --surface: #101f40;
+    --tint: #16284f;
+    --ink: #eaf0fc;
+    --muted: #9fadc9;
+    --line: #21335e;
+    --lapis: #86a6ff;
+    --on-lapis: #0b1730;
+    --gold: #e2b454;
+    --live: #3ccfc6;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4 { font-family: var(--display); line-height: 1.15; color: var(--ink); }
+img, svg { max-width: 100%; }
+
+a { color: var(--lapis); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--lapis);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.skip {
+  position: absolute; left: 12px; top: -90px; z-index: 200;
+  padding: 10px 16px; border-radius: 8px;
+  background: var(--lapis); color: var(--on-lapis);
+  font-family: var(--display); font-weight: 600; text-decoration: none;
+}
+.skip:focus { top: 12px; }
+
+.wrap {
+  max-width: 1040px; margin: 0 auto;
+  padding-left: max(var(--gutter), env(safe-area-inset-left));
+  padding-right: max(var(--gutter), env(safe-area-inset-right));
+}
+
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+}
+
+@media print {
+  .sidebar, .mobile-nav, .site-head, .skip { display: none; }
+  .main { margin-left: 0; }
+  body { background: #fff; color: #000; }
+}

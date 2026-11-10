@@ -1,0 +1,17 @@
+/* event.css — events.html (contact card for QR / NFC) */
+.event-page { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 28px var(--gutter); }
+.event {
+  width: 100%; max-width: 600px; padding: clamp(24px, 6vw, 48px);
+  background: var(--surface); border: 1px solid var(--line); border-radius: 18px;
+  border-top: 5px solid var(--gold);
+  animation: rise .6s ease-out both;
+}
+.event h1 { font-size: clamp(2.2rem, 9vw, 3.4rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
+.event .tagline { margin-top: 12px; color: var(--muted); }
+.event .about { margin-top: 18px; }
+.event .contact { display: flex; flex-direction: column; gap: 2px; margin-top: 18px; font-family: var(--display); }
+.event .contact a { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: var(--ink); font-weight: 500; text-decoration-color: var(--gold); text-decoration-thickness: 2px; overflow-wrap: anywhere; }
+.event .contact .ic { width: 22px; height: 22px; }
+.event .group { margin-top: 22px; }
+.event .btn-row { margin-top: 26px; }
+.event-foot { margin-top: 20px; font-family: var(--display); font-size: 0.85rem; color: var(--muted); }

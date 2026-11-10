@@ -1,0 +1,21 @@
+/* home.css — index.html */
+.hero { padding: clamp(36px, 8vw, 92px) 0 clamp(36px, 6vw, 64px); animation: rise .6s ease-out both; }
+
+.status {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--display); font-size: 0.95rem; font-weight: 500; color: var(--muted);
+  margin-bottom: 20px;
+}
+.status::before { content: ''; width: 9px; height: 9px; border-radius: 50%; background: var(--live); box-shadow: 0 0 0 4px color-mix(in srgb, var(--live) 22%, transparent); }
+
+.name { font-size: clamp(2.9rem, 12vw, 8.2rem); font-weight: 800; letter-spacing: -0.035em; line-height: 0.95; }
+.lede { margin-top: 26px; max-width: 34rem; font-size: clamp(1.1rem, 2.4vw, 1.4rem); line-height: 1.5; }
+
+.contact { display: flex; flex-wrap: wrap; gap: 4px 28px; margin-top: 26px; font-family: var(--display); }
+.contact a {
+  display: inline-flex; align-items: center; gap: 10px; min-height: 44px;
+  color: var(--ink); font-weight: 500; text-decoration-color: var(--gold); text-decoration-thickness: 2px;
+}
+.contact a:hover { color: var(--lapis); }
+.contact .ic { width: 22px; height: 22px; }
+.hero .btn-row { margin-top: 26px; }
